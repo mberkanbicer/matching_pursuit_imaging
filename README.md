@@ -1,5 +1,4 @@
-# matching_pursuit_imaging
-Matching Pursuit Algorithm for Microwave Breast Imaging
+# Matching Pursuit Algorithm for Microwave Breast Imaging
 
 The main file: mp_imaging.m
 
