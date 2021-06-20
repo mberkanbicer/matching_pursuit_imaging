@@ -1,14 +1,14 @@
-function [komsular] = komsubul(ind, derece)
-    if (derece < 1)
-        disp('derece 1''den buyuk olmali')
+function [neighbors] = find_neighbor(ind, degree)
+    if (degree < 1)
+        disp('Degree should be greater than 1')
     else
-        [cols, rows] = meshgrid(-derece : derece, -derece : derece);
+        [cols, rows] = meshgrid(-degree : degree, -degree : degree);
 
         [r, c] = size(cols);
 
         for m = 1:r
             for n=1:c
-                komsular{m, n} = [rows(m, n) cols(m, n)] + ind;
+                neighbors{m, n} = [rows(m, n) cols(m, n)] + ind;
             end
         end
     end
